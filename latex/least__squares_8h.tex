@@ -1,0 +1,78 @@
+\doxysection{CCP-\/\+TEPP-\/\+SS-\/\+Docs/\+include/\+least\+\_\+squares.h File Reference}
+\hypertarget{least__squares_8h}{}\label{least__squares_8h}\index{CCP-\/TEPP-\/SS-\/Docs/include/least\_squares.h@{CCP-\/TEPP-\/SS-\/Docs/include/least\_squares.h}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{structDataset}{Dataset}}
+\begin{DoxyCompactList}\small\item\em x, y datapoints for least squares regression \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{structDataset}{Dataset}} \doxymbox{\hyperlink{least__squares_8h_aab6118da2f9e24a40527de1c8b0dc3e5}{read\+\_\+data}} (const char \texorpdfstring{$\ast$}{*}filename)
+\begin{DoxyCompactList}\small\item\em Read in some parameter data to the \doxylink{structDataset}{Dataset} struct. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{least__squares_8h_abd30514971e2c56c895aa17721b89218}{solve\+\_\+least\+\_\+squares}} (const \doxymbox{\hyperlink{structDataset}{Dataset}} \texorpdfstring{$\ast$}{*}data, double \texorpdfstring{$\ast$}{*}slope, double \texorpdfstring{$\ast$}{*}intercept)
+\begin{DoxyCompactList}\small\item\em Computes the least square linear fit of the data. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{least__squares_8h_a5346807f18b00121fb305051910f54bb}{print\+\_\+solution}} (double slope, double intercept)
+\begin{DoxyCompactList}\small\item\em Print the solution of the least square fitting operation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Compute a least squares regression 
+
+\label{least__squares_8h_doc-func-members}
+\Hypertarget{least__squares_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{least__squares_8h_a5346807f18b00121fb305051910f54bb}\index{least\_squares.h@{least\_squares.h}!print\_solution@{print\_solution}}
+\index{print\_solution@{print\_solution}!least\_squares.h@{least\_squares.h}}
+\doxysubsubsection{\texorpdfstring{print\_solution()}{print\_solution()}}
+{\footnotesize\ttfamily \label{least__squares_8h_a5346807f18b00121fb305051910f54bb} 
+void print\+\_\+solution (\begin{DoxyParamCaption}\item[{double}]{slope}{, }\item[{double}]{intercept}{}\end{DoxyParamCaption})}
+
+
+
+Print the solution of the least square fitting operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slope} & Optimal slope \\
+\hline
+{\em intercept} & Optimal intercept \\
+\hline
+\end{DoxyParams}
+\Hypertarget{least__squares_8h_aab6118da2f9e24a40527de1c8b0dc3e5}\index{least\_squares.h@{least\_squares.h}!read\_data@{read\_data}}
+\index{read\_data@{read\_data}!least\_squares.h@{least\_squares.h}}
+\doxysubsubsection{\texorpdfstring{read\_data()}{read\_data()}}
+{\footnotesize\ttfamily \label{least__squares_8h_aab6118da2f9e24a40527de1c8b0dc3e5} 
+\doxymbox{\hyperlink{structDataset}{Dataset}} read\+\_\+data (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Read in some parameter data to the \doxylink{structDataset}{Dataset} struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Path to the file to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A populated \doxylink{structDataset}{Dataset} with our data points 
+\end{DoxyReturn}
+\Hypertarget{least__squares_8h_abd30514971e2c56c895aa17721b89218}\index{least\_squares.h@{least\_squares.h}!solve\_least\_squares@{solve\_least\_squares}}
+\index{solve\_least\_squares@{solve\_least\_squares}!least\_squares.h@{least\_squares.h}}
+\doxysubsubsection{\texorpdfstring{solve\_least\_squares()}{solve\_least\_squares()}}
+{\footnotesize\ttfamily \label{least__squares_8h_abd30514971e2c56c895aa17721b89218} 
+void solve\+\_\+least\+\_\+squares (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structDataset}{Dataset}} \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{slope}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{intercept}{}\end{DoxyParamCaption})}
+
+
+
+Computes the least square linear fit of the data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Input data that needs to be fitted \\
+\hline
+{\em slope} & Used for storing the optimal slope \\
+\hline
+{\em intercept} & Used for storing the optimal intercept \\
+\hline
+\end{DoxyParams}

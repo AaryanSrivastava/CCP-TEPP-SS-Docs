@@ -1,0 +1,50 @@
+\doxysection{CCP-\/\+TEPP-\/\+SS-\/\+Docs/\+src/\+least\+\_\+squares.c File Reference}
+\hypertarget{least__squares_8c}{}\label{least__squares_8c}\index{CCP-\/TEPP-\/SS-\/Docs/src/least\_squares.c@{CCP-\/TEPP-\/SS-\/Docs/src/least\_squares.c}}
+{\ttfamily \+\#include $<$stdio.\+h$>$}\newline
+{\ttfamily \+\#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \+\#include $<$math.\+h$>$}\newline
+{\ttfamily \+\#include "{}least\+\_\+squares.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{structDataset}{Dataset}} \doxymbox{\hyperlink{least__squares_8c_aab6118da2f9e24a40527de1c8b0dc3e5}{read\+\_\+data}} (const char \texorpdfstring{$\ast$}{*}filename)
+\begin{DoxyCompactList}\small\item\em Read in some parameter data to the \doxylink{structDataset}{Dataset} struct. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{least__squares_8c_abd30514971e2c56c895aa17721b89218}{solve\+\_\+least\+\_\+squares}} (const \doxymbox{\hyperlink{structDataset}{Dataset}} \texorpdfstring{$\ast$}{*}data, double \texorpdfstring{$\ast$}{*}slope, double \texorpdfstring{$\ast$}{*}intercept)
+\item 
+void \doxymbox{\hyperlink{least__squares_8c_a5346807f18b00121fb305051910f54bb}{print\+\_\+solution}} (double slope, double intercept)
+\end{DoxyCompactItemize}
+
+
+\label{least__squares_8c_doc-func-members}
+\Hypertarget{least__squares_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{least__squares_8c_a5346807f18b00121fb305051910f54bb}\index{least\_squares.c@{least\_squares.c}!print\_solution@{print\_solution}}
+\index{print\_solution@{print\_solution}!least\_squares.c@{least\_squares.c}}
+\doxysubsubsection{\texorpdfstring{print\_solution()}{print\_solution()}}
+{\footnotesize\ttfamily \label{least__squares_8c_a5346807f18b00121fb305051910f54bb} 
+void print\+\_\+solution (\begin{DoxyParamCaption}\item[{double}]{slope}{, }\item[{double}]{intercept}{}\end{DoxyParamCaption})}
+
+\Hypertarget{least__squares_8c_aab6118da2f9e24a40527de1c8b0dc3e5}\index{least\_squares.c@{least\_squares.c}!read\_data@{read\_data}}
+\index{read\_data@{read\_data}!least\_squares.c@{least\_squares.c}}
+\doxysubsubsection{\texorpdfstring{read\_data()}{read\_data()}}
+{\footnotesize\ttfamily \label{least__squares_8c_aab6118da2f9e24a40527de1c8b0dc3e5} 
+\doxymbox{\hyperlink{structDataset}{Dataset}} read\+\_\+data (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Read in some parameter data to the \doxylink{structDataset}{Dataset} struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Path to the file to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A populated \doxylink{structDataset}{Dataset} with our data points 
+\end{DoxyReturn}
+\Hypertarget{least__squares_8c_abd30514971e2c56c895aa17721b89218}\index{least\_squares.c@{least\_squares.c}!solve\_least\_squares@{solve\_least\_squares}}
+\index{solve\_least\_squares@{solve\_least\_squares}!least\_squares.c@{least\_squares.c}}
+\doxysubsubsection{\texorpdfstring{solve\_least\_squares()}{solve\_least\_squares()}}
+{\footnotesize\ttfamily \label{least__squares_8c_abd30514971e2c56c895aa17721b89218} 
+void solve\+\_\+least\+\_\+squares (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structDataset}{Dataset}} \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{slope}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{intercept}{}\end{DoxyParamCaption})}
+

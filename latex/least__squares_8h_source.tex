@@ -1,0 +1,22 @@
+\doxysection{least\+\_\+squares.\+h}
+\hypertarget{least__squares_8h_source}{}\label{least__squares_8h_source}\index{CCP-\/TEPP-\/SS-\/Docs/include/least\_squares.h@{CCP-\/TEPP-\/SS-\/Docs/include/least\_squares.h}}
+\doxymbox{\hyperlink{least__squares_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifndef\ LEAST\_SQUARES\_H}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ LEAST\_SQUARES\_H}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{double}\ *\doxymbox{\hyperlink{structDataset_a96695e9ad3b5c43af564932a5fd0bedd}{x}};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{double}\ *\doxymbox{\hyperlink{structDataset_a1b23b303b521d9de6c8ca2218af65e6b}{y}};}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{structDataset_a3428560e40793e8bf5ad8723214414b5}{n}};}
+\DoxyCodeLine{00015\ \}\ \doxymbox{\hyperlink{structDataset}{Dataset}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \doxymbox{\hyperlink{structDataset}{Dataset}}\ \doxymbox{\hyperlink{least__squares_8h_aab6118da2f9e24a40527de1c8b0dc3e5}{read\_data}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *filename);}
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{least__squares_8h_abd30514971e2c56c895aa17721b89218}{solve\_least\_squares}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structDataset}{Dataset}}\ *data,\ \textcolor{keywordtype}{double}\ *slope,\ \textcolor{keywordtype}{double}\ *intercept);}
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{least__squares_8h_a5346807f18b00121fb305051910f54bb}{print\_solution}}(\textcolor{keywordtype}{double}\ slope,\ \textcolor{keywordtype}{double}\ intercept);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LEAST\_SQUARES\_H}}
+
+\end{DoxyCode}
